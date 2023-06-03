@@ -1,0 +1,8 @@
+﻿<Application x:Class="BookStoreAdo.NetProject.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BookStoreAdo.NetProject"
+             StartupUri="Windows/LoginWindow.xaml">
+    <Application.Resources>
+    </Application.Resources>
+</Application>

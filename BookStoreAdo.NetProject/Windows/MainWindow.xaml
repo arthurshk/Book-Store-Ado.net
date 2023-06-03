@@ -1,0 +1,48 @@
+﻿<Window x:Class="BookStoreAdo.NetProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStoreAdo.NetProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DataGrid Grid.Column="0" Name="dgInfo">
+
+        </DataGrid>
+        <Grid Grid.Column="1" Background="Honeydew">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Name ="authorNamelbl" >Enter Author Name:</TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="0" Margin="5,10" Name ="authorNametxt"></TextBox>
+            <TextBlock Grid.Column="0" Grid.Row="1" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Name="authorSurnamelbl">Enter Author Surname:</TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="1" Margin="5,10" Name="authorSurnametxt"></TextBox>
+            <TextBlock Grid.Column="0" Grid.Row="2" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Name="bookNamelbl" >Enter Title:</TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="2" Margin="5,10" VerticalAlignment="Center" Height="40" Name="bookNametxt"></TextBox>
+            <TextBlock Grid.Column="0" Grid.Row="3" Margin="5,10" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Name="pgslbl">Enter # of Pages:</TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="3" Margin="5,10" Name="pgstxt"></TextBox>
+            <TextBlock Grid.Column="0" Grid.Row="4" Margin="5,10" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Name="pricelbl">Enter price with $ mark:</TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="4" Margin="5,10" Name="pricetxt"></TextBox>
+            <Button Grid.Column="1" Grid.Row="5" Padding="10,10,10,10" Margin="0,10" Content="Add Book(Type all fields)" FontWeight="Bold" Name="addBookbtn" Click="addBookbtn_Click" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"  Background="LightGoldenrodYellow" Width="198"></Button>
+            <Button Grid.Column="0" Grid.Row="5" Padding="10,10,10,10" Margin="10,10,10,10" Content="Delete Book by Title" FontWeight="Bold" Name="deleteBookbtn" Click="deleteBookbtn_Click" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Background="LightGoldenrodYellow"></Button>
+            <Button Grid.Column="1" Grid.Row="6" Padding="10,10,10,10" Margin="10,10,10,10" Content="Find by Title" FontWeight="Bold" Name ="findBookbtn" Click="findBookbtn_Click" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Background="LightGoldenrodYellow"></Button>
+            <Button Grid.Column="0" Grid.Row="6" Padding="10,10,10,10" Margin="22,10,16,10" Content="Show All(Press First)" FontWeight="Bold" Name="showAllbtn" Click="showAllbtn_Click" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Background="LightGoldenrodYellow" Width="160" RenderTransformOrigin="0.299,0.65" />
+        </Grid>
+    </Grid>
+</Window>
